@@ -67,6 +67,29 @@
           display: inline-block;
           animation: moveText 10s linear infinite;
         }
+        /* Estilo para o contêiner */
+    .animated-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      color: #FFFFFF; /* Cor azul do Bootstrap */
+    }
+    @keyframes moveText {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(200px); }
+      100% { transform: translateX(0); }
+  }
+
+  .moving-text {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #FFFFFF;
+      animation: moveText 3s infinite ease-in-out;
+  }
     </style>
 </head>
 <body class="bg-black text-white">
@@ -137,7 +160,9 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
   </div>
-
+  <div class="text-center">
+    <p class="moving-text">SEJA  BEM VINDO A IGREJA  ADMAC SAMAMBAIA -SUL</p>
+</div>
   <!-- Cards de Divulgação -->
   <div class="container mt-5">
     <div class="row">
