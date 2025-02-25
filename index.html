@@ -46,55 +46,29 @@
         .music-icon:hover {
           transform: scale(1.1);
         }
-        .moving-text {
-          font-size: 2rem;
-          font-weight: bold;
-          white-space: nowrap;
-          overflow: hidden;
-          display: block;
-          width: 100%;
-          text-align: center;
-        }
-        @keyframes moveText {
-          from {
-            transform: translateX(100%);
-          }
-          to {
-            transform: translateX(-100%);
-          }
-        }
-        .moving-text span {
-          display: inline-block;
-          animation: moveText 10s linear infinite;
-        }
-        /* Estilo para o contêiner */
-    .animated-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Arial', sans-serif;
-      font-size: 4rem;
-      font-weight: bold;
-      color: #FFFFFF; /* Cor azul do Bootstrap */
+       /* Estilo para o texto em movimento */
+       .marquee-container {
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: #0000;
+        padding: 10px;
     }
-    @keyframes moveText {
-      0% { transform: translateX(0); }
-      50% { transform: translateX(200px); }
-      100% { transform: translateX(0); }
-  }
-
-  .moving-text {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #FFFFFF;
-      animation: moveText 3s infinite ease-in-out;
-  }
+    .marquee-text {
+        display: inline-block;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        from { transform: translateX(100%); }
+        to { transform: translateX(-100%); }
+    }
+  
     </style>
 </head>
 <body class="bg-black text-white">
 <!-- Navbar -->
-
 <header>
    <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
@@ -160,8 +134,10 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button>
   </div>
-  <div class="text-center">
-    <p class="moving-text">SEJA  BEM VINDO A IGREJA  ADMAC SAMAMBAIA -SUL</p>
+  <div class="container mt-5">
+    <div class="marquee-container">
+        <span class="marquee-text">SEJA BEM VINDO AIGREJA  ADMAC - CONVIDO  VOCE  PARTICIPAR DA  NOSSA  PROGRAMAÇOES!</span>
+    </div>
 </div>
   <!-- Cards de Divulgação -->
   <div class="container mt-5">
