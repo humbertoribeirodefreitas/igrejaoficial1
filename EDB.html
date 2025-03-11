@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Bíblica</title>
+    <link rel="shortcut icon" href="./imagem/banner2.png" type="image/x-icon">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #1c1c1c;
+        }
+        .card {
+            background-color: #2c2c2c;
+            border: none;
+            color: #fff;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #0d6efd;
+        }
+        .download-btn {
+            background-color: #0d6efd;
+            border: none;
+        }
+        .download-btn:hover {
+            background-color: #0b5ed7;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Escola Bíblica</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#professores">Professores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#materias">Matérias</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>--->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Vídeo do YouTube Centralizado -->
+<div class="container text-center my-5">
+    <h2>Bem-vindo à Escola Bíblica</h2>
+    <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/1NYSLyyoUUM?si=f4r-ozlYbEyc717I" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </div>
+</div>
+
+<!-- Cards de Professores -->
+<section id="professores" class="container my-5">
+    <h2 class="text-center mb-4">Nossos Professores</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="./imagem/professor1.jpg" class="card-img-top" alt="Professor 1">
+                <div class="card-body">
+                    <h5 class="card-title">Professor 1</h5>
+                    <p class="card-text">Descrição breve do professor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./imagem/professor1.jpg" class="card-img-top" alt="Professor 2">
+                <div class="card-body">
+                    <h5 class="card-title">Professor 2</h5>
+                    <p class="card-text">Descrição breve do professor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./imagem/professor1.jpg" class="card-img-top" alt="Professor 3">
+                <div class="card-body">
+                    <h5 class="card-title">Professor 3</h5>
+                    <p class="card-text">Descrição breve do professor.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Repita os cards para mais professores -->
+    </div>
+</section>
+
+<!-- Quadro de Matérias -->
+<section id="materias" class="container my-5">
+    <h2 class="text-center mb-4">Matérias</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="./imagem/revuata.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Matéria 1</h5>
+                    <p class="card-text">Descrição da matéria.</p>
+                    <a href="#" class="btn download-btn">Baixar Material (PDF)</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="./imagem/revuata.jpg" class="card-img-top" alt="Matéria 2">
+                <div class="card-body">
+                    <h5 class="card-title">Matéria 2</h5>
+                    <p class="card-text">Descrição da matéria.</p>
+                    <a href="#" class="btn download-btn">Baixar Material (PDF)</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repita os cards para mais matérias -->
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contato" class="footer py-4">
+    <div class="container text-center">
+        <h4>Entre em Contato</h4>
+        <div class="mt-3">
+            <a href="https://wa.me/5561981953667" target="_blank" class="me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="https://www.instagram.com/admac.sede/?igsh=azEwaWdqZmVxeWJ0#" target="_blank" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/live/LUkrsSCGrlM?si=w-LLVEKCagNk3oVR" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+        <p class="mt-3">&copy; 2023 Escola Bíblica. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
